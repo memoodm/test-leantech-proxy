@@ -18,7 +18,7 @@ public class ProxyController {
 	@Autowired
 	private ProxyService proxyService;
 	
-	@RequestMapping(value = "/redirect-web", method = RequestMethod.GET)
+	@RequestMapping(value = "/redirect-web")
 	public ResponseEntity<?> redirect(
 			@RequestParam(required = true) String target,
 			@RequestBody(required=false) Object body,
